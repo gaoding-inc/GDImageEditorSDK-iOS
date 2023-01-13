@@ -1,0 +1,6 @@
+framework module GDImageEditorSDK {
+  umbrella header "GDImageEditorSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

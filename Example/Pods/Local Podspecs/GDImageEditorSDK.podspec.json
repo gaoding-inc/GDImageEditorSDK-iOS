@@ -1,0 +1,25 @@
+{
+  "name": "GDImageEditorSDK",
+  "version": "0.1.0",
+  "summary": "A short description of GDImageEditorSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zmz/GDImageEditorSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zmz": "826276259@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zmz/GDImageEditorSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "GDImageEditorSDK/Classes/**/*",
+  "ios": {
+    "vendored_frameworks": "GDImageEditorSDK.framework"
+  }
+}

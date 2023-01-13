@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GDImageEditorSDK-Demo' do
+  pod 'GDImageEditorSDK', :path => '../'
+  
+  
+end

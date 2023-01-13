@@ -1,0 +1,16 @@
+PODS:
+  - GDImageEditorSDK (0.1.0)
+
+DEPENDENCIES:
+  - GDImageEditorSDK (from `../`)
+
+EXTERNAL SOURCES:
+  GDImageEditorSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GDImageEditorSDK: 7249dad37cf96dca3e986228764a9eaefebb7f62
+
+PODFILE CHECKSUM: 4dc7f8cf70950dce7c1e5dd55a15ed743d01f03e
+
+COCOAPODS: 1.11.3
