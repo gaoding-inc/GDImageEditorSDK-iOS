@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDImageEditorSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of GDImageEditorSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zmz/GDImageEditorSDK'
+  s.homepage         = 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zmz' => '826276259@qq.com' }
-  s.source           = { :git => 'https://github.com/zmz/GDImageEditorSDK.git', :tag => s.version.to_s }
+  s.author           = { 'xinqing' => '826276259@qq.com' }
+  s.source           = { :git => 'git@github.com:gaoding-inc/GDImageEditorSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
