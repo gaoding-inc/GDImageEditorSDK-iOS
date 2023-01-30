@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GDImageEditorSDK'
   s.version          = '0.2.0'
-  s.summary          = 'A short description of GDImageEditorSDK.'
+  s.summary          = '稿定Web编辑器SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,14 +25,20 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xinqing' => '826276259@qq.com' }
-  s.source           = { :git => 'git@github.com:gaoding-inc/GDImageEditorSDK-iOS.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'GDImageEditorSDK/Classes/**/*'
+#  s.source_files = 'GDImageEditorSDK/Classes/**/*'
   
   s.ios.vendored_frameworks = 'GDImageEditorSDK.framework'
+  
+  s.pod_target_xcconfig = {
+    'ENABLE_BITCODE' => 'NO',
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  }
+  s.frameworks = 'WebKit'
   
   # s.resource_bundles = {
   #   'GDImageEditorSDK' => ['GDImageEditorSDK/Assets/*.png']

@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/GDImageEditorSDK-umbrella.h</key>
 		<data>
-		i75ZQPygdN48tDKiLrx9ntJrZUw=
+		DAIY3pyu4SRRIK6weTYQ1MzS82k=
 		</data>
 		<key>Headers/GDImageEditorSDK.h</key>
 		<data>
@@ -28,13 +28,9 @@
 		<data>
 		oxfUNDbJI12OrfWz0nfHp0KYOpw=
 		</data>
-		<key>Headers/NSString+GDEncrypt.h</key>
-		<data>
-		wJqL9ansQrm902xlMiecboj4goA=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		CSaHX4iY9lONeKYYeJOMrIIRAIo=
+		86n5NzSgHmsWPUbN86sL3KHvvrg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,11 +124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i75ZQPygdN48tDKiLrx9ntJrZUw=
+			DAIY3pyu4SRRIK6weTYQ1MzS82k=
 			</data>
 			<key>hash2</key>
 			<data>
-			I4isUC/RvIualWoiy5OgqOviIAPXhfgHq4UFGE20bKo=
+			3FIxlFpTbqyyRc+UEr1XM4ljPZi9e2bD/QP0FKPkVG4=
 			</data>
 		</dict>
 		<key>Headers/GDImageEditorSDK.h</key>
@@ -155,17 +151,6 @@
 			<key>hash2</key>
 			<data>
 			03K/BAQ/2MzKsvInST15pgHwQyhTMkVtgmQ1k/Q69uo=
-			</data>
-		</dict>
-		<key>Headers/NSString+GDEncrypt.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wJqL9ansQrm902xlMiecboj4goA=
-			</data>
-			<key>hash2</key>
-			<data>
-			iqdXwO+ftU2/sBYCv3sDwdXXhhi1yWW+KI4oUl+lMt8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

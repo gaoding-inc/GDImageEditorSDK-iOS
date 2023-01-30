@@ -12,7 +12,6 @@
 
 #import "GDImageEditorSDK.h"
 #import "GDImageEditorSDKDelegate.h"
-#import "NSString+GDEncrypt.h"
 
 FOUNDATION_EXPORT double GDImageEditorSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char GDImageEditorSDKVersionString[];
