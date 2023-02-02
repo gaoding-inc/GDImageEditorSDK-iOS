@@ -1,4 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git' #官方默认源
+
+platform :ios, '9.0'
+
 use_frameworks!
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+  end
+end
+
 target 'GDImageEditorSDK-Demo' do
   pod 'GDImageEditorSDK', :path => '../'
   
