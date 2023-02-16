@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = GDImageEditorSDK;
+			productName = GDImageEditorSDK;
 		};
 /* End PBXAggregateTarget section */
 
@@ -43,16 +44,16 @@
 		2114DAA4F1D098A7ED6EDD4A98DB0CE1 /* Pods-GDImageEditorSDK-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GDImageEditorSDK-Demo-frameworks.sh"; sourceTree = "<group>"; };
 		34D3A9DF71258E8272EDC95B08706711 /* GDImageEditorSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDImageEditorSDK.debug.xcconfig; sourceTree = "<group>"; };
 		377856CE64EAC83A104D4DE253252864 /* GDImageEditorSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDImageEditorSDK.release.xcconfig; sourceTree = "<group>"; };
-		42DEC821F0740B57DBAE52B33918369F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		42DEC821F0740B57DBAE52B33918369F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		730D3F792FAD0FF55BCAC994ED2D73E6 /* Pods-GDImageEditorSDK-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GDImageEditorSDK-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		7FEE804EA1655A1B5E906FBB71FFD1BB /* Pods-GDImageEditorSDK-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GDImageEditorSDK-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		83250902DC5EE7768C71C05763206CE8 /* Pods-GDImageEditorSDK-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GDImageEditorSDK-Demo-dummy.m"; sourceTree = "<group>"; };
 		84C403D681666CAAD3A7D5EB16B7615D /* Pods-GDImageEditorSDK-Demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GDImageEditorSDK-Demo-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB09C90AB0BE091AFA28159659EB051E /* Pods-GDImageEditorSDK-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GDImageEditorSDK-Demo.modulemap"; sourceTree = "<group>"; };
-		E54C84A6A38E91801AAB5CE2FC50140E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		EEBF92C769E96F5DFFF286EAC84FB591 /* GDImageEditorSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GDImageEditorSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E54C84A6A38E91801AAB5CE2FC50140E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EEBF92C769E96F5DFFF286EAC84FB591 /* GDImageEditorSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GDImageEditorSDK.podspec; sourceTree = "<group>"; tabWidth = 2; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,8 +470,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

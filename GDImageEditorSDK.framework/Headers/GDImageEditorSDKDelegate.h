@@ -23,9 +23,10 @@ typedef struct __attribute__((objc_boxable)) GDImageEditorMessage GDImageEditorM
 
 // MARK: - 鉴权
 
-/// 默认鉴权
+/// 默认鉴权 (AK/SK/uid)
+/// - uid: 接入方系统内用户唯一标识，稿定系统根据该标识创建关联账号。
 /// @param editor 编辑器
-- (NSString *)uidForFetchAuthCode:(GDImageEditorSDK *)editor;
+- (NSDictionary *)paramForFetchAuthCode:(GDImageEditorSDK *)editor;
 
 /// 不走默认鉴权，定制化查询授权码
 /// @param editor 编辑器

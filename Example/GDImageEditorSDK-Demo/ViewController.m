@@ -18,7 +18,9 @@
 - (IBAction)useGDTemplateCenter:(id)sender {
     GDImageEditorSDK *sdk = [GDImageEditorSDK new];
     sdk.delegate = self;
-    [sdk openPage:GDImageEditorPageTemplates params:nil];
+    [sdk openPage:GDImageEditorPageTemplates params:@{
+        @"thirdCateId": @"80"
+    }];
 }
 
 - (IBAction)clearCache:(id)sender {
@@ -28,8 +30,11 @@
 
 // MARK: - 鉴权
 
-- (NSString *)uidForFetchAuthCode:(GDImageEditorSDK *)editor {
-    return @"test01";
+- (NSDictionary *)paramForFetchAuthCode:(GDImageEditorSDK *)editor {
+    return @{
+        @"AK": @"8DF7FEF5DFFFACDEF0F287266D0B8B21",
+        @"SK": @"50BE03427C039AD53391586BF9D7A907",
+    };
 }
 
 // MARK: - SDK事件

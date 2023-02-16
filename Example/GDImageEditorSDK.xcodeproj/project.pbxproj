@@ -14,7 +14,6 @@
 		FC347F36296BBD0000754FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC347F35296BBD0000754FDC /* Assets.xcassets */; };
 		FC347F39296BBD0000754FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC347F37296BBD0000754FDC /* LaunchScreen.storyboard */; };
 		FC347F3C296BBD0000754FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC347F3B296BBD0000754FDC /* main.m */; };
-		FC9E46C0297132A100295771 /* GDImageEditorSDKConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = FC9E46BF297132A100295771 /* GDImageEditorSDKConfiguration.json */; };
 		FD2FD454A5484A2DD95DE807 /* Pods_GDImageEditorSDK_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DDF9A349763A52D7390A77 /* Pods_GDImageEditorSDK_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		FC347F38296BBD0000754FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC347F3A296BBD0000754FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC347F3B296BBD0000754FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FC9E46BF297132A100295771 /* GDImageEditorSDKConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GDImageEditorSDKConfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +119,6 @@
 				FC347F2D296BBCFF00754FDC /* SceneDelegate.m */,
 				FC347F2F296BBCFF00754FDC /* ViewController.h */,
 				FC347F30296BBCFF00754FDC /* ViewController.m */,
-				FC9E46BF297132A100295771 /* GDImageEditorSDKConfiguration.json */,
 				FC347F32296BBCFF00754FDC /* Main.storyboard */,
 				FC347F35296BBD0000754FDC /* Assets.xcassets */,
 				FC347F37296BBD0000754FDC /* LaunchScreen.storyboard */,
@@ -195,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC347F39296BBD0000754FDC /* LaunchScreen.storyboard in Resources */,
-				FC9E46C0297132A100295771 /* GDImageEditorSDKConfiguration.json in Resources */,
 				FC347F36296BBD0000754FDC /* Assets.xcassets in Resources */,
 				FC347F34296BBCFF00754FDC /* Main.storyboard in Resources */,
 			);
@@ -383,6 +379,7 @@
 				DEVELOPMENT_TEAM = YH6XM8252K;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXCLUDED_ARCHS = "$(inherited)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) arm64";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

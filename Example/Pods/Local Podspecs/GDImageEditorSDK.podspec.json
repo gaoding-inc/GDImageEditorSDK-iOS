@@ -1,6 +1,6 @@
 {
   "name": "GDImageEditorSDK",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "summary": "稿定Web编辑器SDK",
   "description": "稿定Web编辑器SDK",
   "homepage": "https://github.com/gaoding-inc/GDImageEditorSDK-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoding-inc/GDImageEditorSDK-iOS.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "9.0"
