@@ -77,8 +77,8 @@ typedef struct __attribute__((objc_boxable)) GDImageEditorMessage GDImageEditorM
 /// - Parameters:
 ///   - editor: 编辑器
 ///   - message: 消息内容
-/// @return 返回给JS处理结果
-- (id)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message;
+///   - callback: 消息处理完毕，调用通知JS
+- (void)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message callback:(void(^)(id _Nullable result))callback;
 
 @end
 

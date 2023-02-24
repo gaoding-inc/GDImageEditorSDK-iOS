@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <GDImageEditorSDK/GDImageEditorSDK.h>
+#import <Photos/Photos.h>
 
 @interface ViewController () <GDImageEditorSDKDelegate>
 
@@ -69,13 +70,23 @@
     // ...
 }
 
-- (id)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message {
-    if ([message.type isEqualToString:@"xxxx"]) {
-        return @"xxxx";
+- (void)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message callback:(void(^)(id result))callback {
+    if ([message.type isEqualToString:@"before_add_image"]) {
+        // 检查相册权限
+        if (@available(iOS 14, *)) {
+            [PHPhotoLibrary requestAuthorizationForAccessLevel:PHAccessLevelReadWrite handler:^(PHAuthorizationStatus status) {
+                BOOL authorized = status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusLimited;
+                callback(@(1));
+            }];
+        } else {
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+                BOOL authorized = status == PHAuthorizationStatusAuthorized;
+                callback(@(authorized));
+            }];
+        }
+        return;
     }
-    // ... else ...
-    // ... else ...
-    return nil;
+    callback(nil);
 }
 
 // MARK: - 生命周期
