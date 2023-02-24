@@ -71,21 +71,24 @@
 }
 
 - (void)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message callback:(void(^)(id result))callback {
-    if ([message.type isEqualToString:@"before_add_image"]) {
-        // 检查相册权限
-        if (@available(iOS 14, *)) {
-            [PHPhotoLibrary requestAuthorizationForAccessLevel:PHAccessLevelReadWrite handler:^(PHAuthorizationStatus status) {
-                BOOL authorized = status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusLimited;
-                callback(@(1));
-            }];
-        } else {
-            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-                BOOL authorized = status == PHAuthorizationStatusAuthorized;
-                callback(@(authorized));
-            }];
-        }
-        return;
-    }
+//    使用示例，不要忘记调用callback
+//    if ([message.type isEqualToString:@"before_add_image"]) {
+//        // 检查相册权限
+//        if (@available(iOS 14, *)) {
+//            [PHPhotoLibrary requestAuthorizationForAccessLevel:PHAccessLevelReadWrite handler:^(PHAuthorizationStatus status) {
+//                BOOL authorized = status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusLimited;
+//                callback(@(authorized));
+//            }];
+//        } else {
+//            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+//                BOOL authorized = status == PHAuthorizationStatusAuthorized;
+//                callback(@(authorized));
+//            }];
+//        }
+//        return;
+//    }
+    // ... else ...
+    // ... else ...
     callback(nil);
 }
 
