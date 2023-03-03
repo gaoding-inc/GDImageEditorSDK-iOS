@@ -54,6 +54,7 @@
             @"image" : imageURL ?: @"",
             @"workId" : workId ?: @"",
             @"sourceId" : sourceId ?: @"",
+//            @"onClose" : GDSDKCloseBackToTemplates,
         }];
     } else {
         // 不使用稿定作图完成页，自己完成后续下载操作

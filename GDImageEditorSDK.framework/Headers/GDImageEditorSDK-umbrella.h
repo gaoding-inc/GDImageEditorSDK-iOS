@@ -12,6 +12,7 @@
 
 #import "GDImageEditorSDK.h"
 #import "GDImageEditorSDKDelegate.h"
+#import "SVProgressHUD.h"
 
 FOUNDATION_EXPORT double GDImageEditorSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char GDImageEditorSDKVersionString[];

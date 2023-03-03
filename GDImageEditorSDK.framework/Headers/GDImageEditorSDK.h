@@ -10,17 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#if DEBUG
-//    #define GDImageEditorConfigurationTest
-#endif
-
 extern NSString *GDImageEditorCompanyMode; /// 海报模板模式（默认）
 
+// 三大页面
 typedef NSString * GDImageEditorPage;
 
 extern GDImageEditorPage GDImageEditorPageTemplates;    /// 模板中心页
 extern GDImageEditorPage GDImageEditorPageDesign;       /// 编辑器页
 extern GDImageEditorPage GDImageEditorPageComplete;     /// 作图完成页
+
+// 完成页回到首页事件 onClose
+extern NSString *GDSDKCloseDefault;                     /// 回到sdk外
+extern NSString *GDSDKCloseBackToTemplates;             /// 回到模板中心
 
 @interface GDImageEditorSDK : NSObject
 
@@ -38,6 +39,12 @@ extern GDImageEditorPage GDImageEditorPageComplete;     /// 作图完成页
 
 /// 清理缓存（备注：当切换用户后，务必清理缓存）
 - (void)clearCache;
+
+/// 编辑器VC
+- (UIViewController *)editorViewController;
+
+/// SDK版本
++ (NSString *)version;
 
 /// 渠道id
 @property (nonatomic, copy) NSString *thirdCateId DEPRECATED_MSG_ATTRIBUTE("deprecated. Use `openPage:params:` instead.");

@@ -18,19 +18,23 @@
 		</data>
 		<key>Headers/GDImageEditorSDK-umbrella.h</key>
 		<data>
-		DAIY3pyu4SRRIK6weTYQ1MzS82k=
+		jpC2R5nRH6eAPqnXG8pIFoTAzpA=
 		</data>
 		<key>Headers/GDImageEditorSDK.h</key>
 		<data>
-		b9jlTRqKUbTMXIEyHXnMwAsD+q8=
+		xL22SChV2rXyrWkZdgHNHiBqagw=
 		</data>
 		<key>Headers/GDImageEditorSDKDelegate.h</key>
 		<data>
-		ApEbQbxEd1SA2YNckYxK6vOXErw=
+		09KrEzpvackLD23RcEwYS1KlESA=
+		</data>
+		<key>Headers/SVProgressHUD.h</key>
+		<data>
+		b9PlC+GDXooOcogecgxAkLYGJPg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		86n5NzSgHmsWPUbN86sL3KHvvrg=
+		zriVDYwYu4rBeFfYerROsNI12IQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,33 +128,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DAIY3pyu4SRRIK6weTYQ1MzS82k=
+			jpC2R5nRH6eAPqnXG8pIFoTAzpA=
 			</data>
 			<key>hash2</key>
 			<data>
-			3FIxlFpTbqyyRc+UEr1XM4ljPZi9e2bD/QP0FKPkVG4=
+			k5j+pWTzgjAEmmPcucz8fi2W6w3X/3nf4/dN+2V9IB4=
 			</data>
 		</dict>
 		<key>Headers/GDImageEditorSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b9jlTRqKUbTMXIEyHXnMwAsD+q8=
+			xL22SChV2rXyrWkZdgHNHiBqagw=
 			</data>
 			<key>hash2</key>
 			<data>
-			isITa1t/IA6xo2Y80NCQ/Fe+nLQsnLI3jAmtNelKABE=
+			jZlYMxiG/qRoGYtPIsEsDCsitabVSXUhaHH5NEQbh/E=
 			</data>
 		</dict>
 		<key>Headers/GDImageEditorSDKDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ApEbQbxEd1SA2YNckYxK6vOXErw=
+			09KrEzpvackLD23RcEwYS1KlESA=
 			</data>
 			<key>hash2</key>
 			<data>
-			x1j8kvc+ZJs+HbzEoBVV2fz8S1ly0ZiuKdRp7YgAdMY=
+			uzYJQAe9jEsPjj2uMHM5+T9E7qmMF2i8mS7U15w515o=
+			</data>
+		</dict>
+		<key>Headers/SVProgressHUD.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b9PlC+GDXooOcogecgxAkLYGJPg=
+			</data>
+			<key>hash2</key>
+			<data>
+			oj8t0xJVkcLrUXohStCmm6m8jWef+yF2gOPsRWVHsoY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

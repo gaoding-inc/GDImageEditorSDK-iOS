@@ -35,6 +35,9 @@ typedef struct __attribute__((objc_boxable)) GDImageEditorMessage GDImageEditorM
 
 // MARK: - SDK生命周期
 
+/// 指定基于哪个页面跳转SDK。（如未指定，会默认检测顶端VC跳转）
+- (UIViewController *)baseVCForPresentSDK:(GDImageEditorSDK *)editor;
+
 /// 将要进入编辑器
 /// @param editor 编辑器
 - (void)willEnterImageEditor:(GDImageEditorSDK *)editor;
@@ -74,6 +77,7 @@ typedef struct __attribute__((objc_boxable)) GDImageEditorMessage GDImageEditorM
 // MARK: - 通用事件
 
 /// 通用JS消息
+/// https://www.yuque.com/gaoding-sdk/guide/ncbpxka8e5b1q6kk
 /// - Parameters:
 ///   - editor: 编辑器
 ///   - message: 消息内容
