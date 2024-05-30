@@ -1,11 +1,9 @@
 # GDImageEditorSDK-iOS
 
-此repo包含稿定Web版编辑器SDK + Demo，下载即可运行Demo。
+此 Repo 包含稿定开放平台 SDK + Demo，设置 AKSK 后，即可运行Demo。
 
 分别在如下目录：
 ```
--GDImageEditorSDK.framework：最新SDK文件。
--Example：Demo文件(pod intall后运行)。
+- GDImageEditorSDK.framework：最新SDK文件。
+- Example：Demo 项目(pod intall后运行)。
 ```
-
-详细文档：https://www.yuque.com/gaoding-sdk/guide/sxa2gu7ff5is7hbz

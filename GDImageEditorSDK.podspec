@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDImageEditorSDK'
-  s.version          = '0.2.3'
-  s.summary          = '稿定Web编辑器SDK'
+  s.version          = '2.0.0'
+  s.summary          = '稿定 Web 编辑器 SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '稿定Web编辑器SDK'
+  s.description      = '稿定 Web 编辑器SDK'
   s.homepage         = 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xinqing' => '826276259@qq.com' }
+  s.author           = { 'zhuoyan' => 'jplaywang@gmail.com' }
   s.source           = { :git => 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS.git', :tag => s.version.to_s }
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '14.1'
   s.requires_arc = true
   s.vendored_frameworks = 'GDImageEditorSDK.framework'
+#  s.resource = 'GDImageEditorSDK.framework/GDImageEditorSDK.bundle' 静态库上 pod 才需要
   s.frameworks = 'WebKit'
 end

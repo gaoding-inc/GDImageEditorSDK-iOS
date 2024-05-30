@@ -1,22 +1,22 @@
 {
   "name": "GDImageEditorSDK",
-  "version": "0.2.1",
-  "summary": "稿定Web编辑器SDK",
-  "description": "稿定Web编辑器SDK",
+  "version": "2.0.0",
+  "summary": "稿定 Web 编辑器 SDK",
+  "description": "稿定 Web 编辑器SDK",
   "homepage": "https://github.com/gaoding-inc/GDImageEditorSDK-iOS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "xinqing": "826276259@qq.com"
+    "zhuoyan": "jplaywang@gmail.com"
   },
   "source": {
     "git": "https://github.com/gaoding-inc/GDImageEditorSDK-iOS.git",
-    "tag": "0.2.1"
+    "tag": "2.0.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "14.1"
   },
   "requires_arc": true,
   "vendored_frameworks": "GDImageEditorSDK.framework",

@@ -26,63 +26,27 @@ typedef struct __attribute__((objc_boxable)) GDImageEditorMessage GDImageEditorM
 /// 默认鉴权 (AK/SK/uid)
 /// - uid: 接入方系统内用户唯一标识，稿定系统根据该标识创建关联账号。
 /// @param editor 编辑器
-- (NSDictionary *)paramForFetchAuthCode:(GDImageEditorSDK *)editor;
+- (NSDictionary *)paramsForFetchAuthCode:(GDImageEditorSDK *)editor;
 
-/// 不走默认鉴权，定制化查询授权码
-/// @param editor 编辑器
-/// @param responseCallback 授权码结果
-- (void)imageEditor:(GDImageEditorSDK *)editor fetchAuthCodeWithResponseCallback:(void(^)(NSString *code))responseCallback;
+/// 不走默认鉴权，自定义查询授权码
+/// @param callback 授权码结果
+- (void)fetchAuthCodeWithCallback:(void(^)(NSString *code, NSString *userId, NSError *error))callback;
 
-// MARK: - SDK生命周期
+// MARK: - 数据交互
 
-/// 指定基于哪个页面跳转SDK。（如未指定，会默认检测顶端VC跳转）
-- (UIViewController *)baseVCForPresentSDK:(GDImageEditorSDK *)editor;
+/// 自定义数据配置
+- (NSDictionary *)configInfo;
 
-/// 将要进入编辑器
-/// @param editor 编辑器
-- (void)willEnterImageEditor:(GDImageEditorSDK *)editor;
-
-/// 已经进入编辑器
-/// @param editor 编辑器
-- (void)didEnterImageEditor:(GDImageEditorSDK *)editor;
-
-/// 将要离开编辑器
-/// @param editor 编辑器
-- (void)willLeaveImageEditor:(GDImageEditorSDK *)editor;
-
-/// 已经离开编辑器
-/// @param editor 编辑器
-- (void)didLeaveImageEditor:(GDImageEditorSDK *)editor;
-
-// MARK: - SDK事件
-
-/// 模板中心点击模板
-/// @param editor 编辑器
-/// @param templateId id
-- (void)imageEditor:(GDImageEditorSDK *)editor onTemplateClick:(NSString *)templateId mode:(NSString *)mode;
-
-/// 作图完成回调
-/// @param editor 编辑器
-/// @param imageURL 图片结果地址
-/// @param workId 作图记录id
-/// @param sourceId 源模板id
-- (void)imageEditor:(GDImageEditorSDK *)editor onEditCompleted:(NSString *)imageURL workId:(NSString *)workId
-           sourceId:(NSString *)sourceId;
-
-/// 作图完成页点击保存到手机
-/// @param editor 编辑器
-/// @param imageURL 图片结果地址
-- (void)imageEditor:(GDImageEditorSDK *)editor onDownloadEditResult:(NSString *)imageURL;
-
-// MARK: - 通用事件
-
-/// 通用JS消息
-/// https://www.yuque.com/gaoding-sdk/guide/ncbpxka8e5b1q6kk
+/// 回调信息
 /// - Parameters:
 ///   - editor: 编辑器
 ///   - message: 消息内容
+///   - params:  参数
 ///   - callback: 消息处理完毕，调用通知JS
-- (void)imageEditor:(GDImageEditorSDK *)editor onMessage:(GDImageEditorMessage)message callback:(void(^)(id _Nullable result))callback;
+- (void)imageEditor:(GDImageEditorSDK *)editor
+          onMessage:(GDImageEditorMessage)message
+             params:(NSDictionary *)params
+           callback:(void(^)(id _Nullable result))callback;
 
 @end
 
