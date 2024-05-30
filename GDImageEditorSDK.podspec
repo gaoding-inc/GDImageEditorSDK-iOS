@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '稿定 Web 编辑器SDK'
+  s.description      = '稿定 Web 编辑器 SDK'
   s.homepage         = 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhuoyan' => 'jplaywang@gmail.com' }
@@ -27,4 +27,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'GDImageEditorSDK.framework'
 #  s.resource = 'GDImageEditorSDK.framework/GDImageEditorSDK.bundle' 静态库上 pod 才需要
   s.frameworks = 'WebKit'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
