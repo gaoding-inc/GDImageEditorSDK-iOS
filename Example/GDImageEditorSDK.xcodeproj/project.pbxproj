@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		454D17452C0078E700AB18A5 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454D17412C0078E700AB18A5 /* GDViewController.m */; };
-		454D17462C0078E700AB18A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454D17422C0078E700AB18A5 /* Main.storyboard */; };
-		454D17492C00791800AB18A5 /* GDDemoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 454D17472C00791800AB18A5 /* GDDemoUtils.m */; };
+		4501FAC32C2A9AC70095A63F /* GDDemoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501FAC22C2A9AC70095A63F /* GDDemoUtils.m */; };
+		4501FAC52C2A9B480095A63F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4501FAC42C2A9B480095A63F /* Main.storyboard */; };
+		4501FAC82C2A9B7B0095A63F /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501FAC62C2A9B7B0095A63F /* GDViewController.m */; };
 		FC347F2B296BBCFF00754FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC347F2A296BBCFF00754FDC /* AppDelegate.m */; };
 		FC347F2E296BBCFF00754FDC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC347F2D296BBCFF00754FDC /* SceneDelegate.m */; };
 		FC347F36296BBD0000754FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC347F35296BBD0000754FDC /* Assets.xcassets */; };
@@ -22,11 +22,11 @@
 		05959910428DE3AA8C01BF4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		157A1BBCE6A10D53F00C5397 /* Pods-GDImageEditorSDK-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDImageEditorSDK-Demo.debug.xcconfig"; path = "Target Support Files/Pods-GDImageEditorSDK-Demo/Pods-GDImageEditorSDK-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		1668BC0FD6A11A0EA29045E6 /* Pods-GDImageEditorSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDImageEditorSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GDImageEditorSDK_Tests/Pods-GDImageEditorSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		454D17412C0078E700AB18A5 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDViewController.m; path = ../../../GDImageEditorSDK/Example/GDImageEditorSDK/GDViewController.m; sourceTree = "<group>"; };
-		454D17432C0078E700AB18A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../GDImageEditorSDK/Example/GDImageEditorSDK/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		454D17442C0078E700AB18A5 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDViewController.h; path = ../../../GDImageEditorSDK/Example/GDImageEditorSDK/GDViewController.h; sourceTree = "<group>"; };
-		454D17472C00791800AB18A5 /* GDDemoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDDemoUtils.m; path = ../../../GDImageEditorSDK/Example/GDImageEditorSDK/GDDemoUtils.m; sourceTree = "<group>"; };
-		454D17482C00791800AB18A5 /* GDDemoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDDemoUtils.h; path = ../../../GDImageEditorSDK/Example/GDImageEditorSDK/GDDemoUtils.h; sourceTree = "<group>"; };
+		4501FAC12C2A9AC70095A63F /* GDDemoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDemoUtils.h; sourceTree = "<group>"; };
+		4501FAC22C2A9AC70095A63F /* GDDemoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDemoUtils.m; sourceTree = "<group>"; };
+		4501FAC42C2A9B480095A63F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4501FAC62C2A9B7B0095A63F /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
+		4501FAC72C2A9B7B0095A63F /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
 		50DDF9A349763A52D7390A77 /* Pods_GDImageEditorSDK_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDImageEditorSDK_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,11 +120,11 @@
 				FC347F2A296BBCFF00754FDC /* AppDelegate.m */,
 				FC347F2C296BBCFF00754FDC /* SceneDelegate.h */,
 				FC347F2D296BBCFF00754FDC /* SceneDelegate.m */,
-				454D17442C0078E700AB18A5 /* GDViewController.h */,
-				454D17412C0078E700AB18A5 /* GDViewController.m */,
-				454D17482C00791800AB18A5 /* GDDemoUtils.h */,
-				454D17472C00791800AB18A5 /* GDDemoUtils.m */,
-				454D17422C0078E700AB18A5 /* Main.storyboard */,
+				4501FAC72C2A9B7B0095A63F /* GDViewController.h */,
+				4501FAC62C2A9B7B0095A63F /* GDViewController.m */,
+				4501FAC12C2A9AC70095A63F /* GDDemoUtils.h */,
+				4501FAC22C2A9AC70095A63F /* GDDemoUtils.m */,
+				4501FAC42C2A9B480095A63F /* Main.storyboard */,
 				FC347F35296BBD0000754FDC /* Assets.xcassets */,
 				FC347F37296BBD0000754FDC /* LaunchScreen.storyboard */,
 				FC347F3A296BBD0000754FDC /* Info.plist */,
@@ -196,7 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454D17462C0078E700AB18A5 /* Main.storyboard in Resources */,
+				4501FAC52C2A9B480095A63F /* Main.storyboard in Resources */,
 				FC347F39296BBD0000754FDC /* LaunchScreen.storyboard in Resources */,
 				FC347F36296BBD0000754FDC /* Assets.xcassets in Resources */,
 			);
@@ -253,24 +253,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC347F2B296BBCFF00754FDC /* AppDelegate.m in Sources */,
-				454D17492C00791800AB18A5 /* GDDemoUtils.m in Sources */,
 				FC347F3C296BBD0000754FDC /* main.m in Sources */,
+				4501FAC82C2A9B7B0095A63F /* GDViewController.m in Sources */,
+				4501FAC32C2A9AC70095A63F /* GDDemoUtils.m in Sources */,
 				FC347F2E296BBCFF00754FDC /* SceneDelegate.m in Sources */,
-				454D17452C0078E700AB18A5 /* GDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		454D17422C0078E700AB18A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				454D17432C0078E700AB18A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FC347F37296BBD0000754FDC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
