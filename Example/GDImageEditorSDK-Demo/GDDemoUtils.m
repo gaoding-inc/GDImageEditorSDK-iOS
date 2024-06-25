@@ -35,7 +35,7 @@
 
 + (NSString *)ak {
     NSString *ak = [self customValueForKey:@"GDImageEditor_ak"];
-    return ak ?: @"ACBD45308C9D548115D7164C91762E91";
+    return ak ?: @"";
 }
 
 + (void)setSK:(NSString *)sk {
@@ -44,7 +44,7 @@
 
 + (NSString *)sk {
     NSString *sk = [self customValueForKey:@"GDImageEditor_sk"];
-    return sk ?: @"D0637C10F4330F16A4E242414DAC01F4";
+    return sk ?: @"";
 }
 
 + (void)setUID:(NSString *)uid {
@@ -53,7 +53,7 @@
 
 + (NSString *)uid {
     NSString *uid = [self customValueForKey:@"GDImageEditor_uid"];
-    return uid ?: @"7028227928267455552";
+    return uid ?: @"";
 }
 
 + (void)setTemplateId:(NSString *)templateId {
