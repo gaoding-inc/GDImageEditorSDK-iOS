@@ -56,7 +56,7 @@
     [self.sdk openPage:GDImageEditorPageDesign params:@{
         @"id": inputId,
         @"mode": editorMode,
-        // @"config_code": @"需要开发者填写", // 有使用后台配置的话，开发者自己填写
+        // @"config_code": @"您的后台配置代码",
     }];
 }
 
@@ -99,7 +99,7 @@
         [editor openPage:GDImageEditorPageDesign params:@{
             @"id": params[@"data"][@"id"],
             @"mode": @"template",
-            // @"config_code": @"需要开发者填写", // 有使用后台配置的话，开发者自己填写
+            // @"config_code": @"您的后台配置代码",
         }];
         callback(nil);
         return;
