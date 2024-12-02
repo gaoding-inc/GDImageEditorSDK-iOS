@@ -1,5 +1,5 @@
 PODS:
-  - GDImageEditorSDK (2.0.0)
+  - GDImageEditorSDK (2.1.2)
 
 DEPENDENCIES:
   - GDImageEditorSDK (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GDImageEditorSDK: 733ee2cc529e6862f898a3d2f3e222450ecb83db
+  GDImageEditorSDK: e63c44c0130cc519fd6f71232dee558c998c39c8
 
 PODFILE CHECKSUM: 9b621013453d310ee26161e0c0adcc17e7fe39c9
 
