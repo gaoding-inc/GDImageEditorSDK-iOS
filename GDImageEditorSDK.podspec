@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GDImageEditorSDK'
-  s.version          = '2.1.2'
+  s.version          = '2.1.3'
   s.summary          = '稿定 Web 编辑器 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhuoyan' => 'jplaywang@gmail.com' }
   s.source           = { :git => 'https://github.com/gaoding-inc/GDImageEditorSDK-iOS.git', :tag => s.version.to_s }
-  s.platform = :ios, '13.0'
+  s.platform = :ios, '14.1'
   s.requires_arc = true
   s.vendored_frameworks = 'GDImageEditorSDK.framework'
 #  s.resource = 'GDImageEditorSDK.framework/GDImageEditorSDK.bundle' 静态库上 pod 才需要

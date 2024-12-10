@@ -266,7 +266,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F570CE45C1D4F558A1CFED5049C0741 /* Release */ = {
+		21430DE455A7F7F6B60E60F3716EFAC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 377856CE64EAC83A104D4DE253252864 /* GDImageEditorSDK.release.xcconfig */;
 			buildSettings = {
@@ -275,29 +275,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		17CB806F8DA0E55AF6ACEC6ADC5AB34C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34D3A9DF71258E8272EDC95B08706711 /* GDImageEditorSDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -498,6 +482,22 @@
 			};
 			name = Debug;
 		};
+		EE9D5E271C9529F89F6855B2FD498E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D3A9DF71258E8272EDC95B08706711 /* GDImageEditorSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -522,8 +522,8 @@
 		D1DCB98C40D3EB50A98D069AEF7DFCE1 /* Build configuration list for PBXAggregateTarget "GDImageEditorSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17CB806F8DA0E55AF6ACEC6ADC5AB34C /* Debug */,
-				0F570CE45C1D4F558A1CFED5049C0741 /* Release */,
+				EE9D5E271C9529F89F6855B2FD498E6A /* Debug */,
+				21430DE455A7F7F6B60E60F3716EFAC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
